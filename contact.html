@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Living | Contact Us</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        background: #f9f9f9 url("images/papyrus.webp") repeat;
+        background-size: auto;
+        background-blend-mode: multiply;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #005f73;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .content {
+        flex: 1;
+        margin-right: 20px;
+      }
+      .content h2 {
+        font-size: 2rem;
+        color: #005f73;
+      }
+      .content p,
+      li {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        text-indent: 20px;
+      }
+      nav {
+        background-color: #005f73;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+      }
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      footer {
+        margin-top: auto;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+
+      .contact-info {
+        width: 45%;
+      }
+
+      .contact-form {
+        width: 45%;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      form input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #005f73;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: #003f48;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floorplan.html">Floor Plan</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="content">
+        <h2>Get in Touch</h2>
+        <p>
+          We would love to hear from you. Please fill out the form below and we
+          will get back to you as soon as possible.
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Our contact service is ready to hear from you</h2>
+            <p>
+              Address:
+              <!-- Add address here -->
+            </p>
+            <p>
+              Email:
+              <!-- Add email here -->
+            </p>
+            <p>
+              Phone:
+              <!-- Add phone number here -->
+            </p>
+          </div>
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" /><br /><br />
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" /><br /><br />
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message"></textarea><br /><br />
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Real Living Real Estate. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

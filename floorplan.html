@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Living | Floor Plan</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        background: #f9f9f9 url("images/papyrus.webp") repeat;
+        background-size: auto;
+        background-blend-mode: multiply;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #005f73;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        text-indent: 20px;
+      }
+      nav {
+        background-color: #005f73;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+      }
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .container {
+        display: flex;
+        margin: auto 0;
+        align-items: center;
+        justify-content: space-between;
+        gap: 200px;
+      }
+      .content {
+        flex: 1;
+        margin-right: 20px;
+      }
+      .content h2 {
+        font-size: 2rem;
+        color: #005f73;
+      }
+      .content p,
+      li {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        text-indent: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      footer {
+        margin-top: auto;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Floor Plan</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floorplan.html">Floor Plan</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="content">
+        <h2>Explore Our Floor Plan</h2>
+        <p>
+          Our thoughtfully designed floor plan maximizes both space and comfort.
+          The open-concept layout seamlessly connects the dining, living, and
+          master bedroom areas, allowing for a smooth flow throughout the home.
+        </p>
+        <p>
+          Large windows bring in natural light, creating a bright and inviting
+          atmosphere. The strategic placement of rooms ensures privacy while
+          maintaining accessibility. Whether you're entertaining guests or
+          enjoying a quiet night in, this floor plan offers the perfect balance
+          of function and style.
+        </p>
+        <p>
+          <i>
+            <b>
+              Feel free to utilize the floor plan on the right. The Dining,
+              Living and Master Bedroom areas are all clickable.
+            </b>
+          </i>
+        </p>
+      </div>
+      <img src="images/floorplan.gif" alt="Floor Plan" usemap="#floor-map" />
+      <map name="floor-map">
+        <area
+          shape="rect"
+          coords="0,0,80,140"
+          href="dining.html"
+          alt="Dining Area"
+        />
+        <area
+          shape="rect"
+          coords="80,0,170,140"
+          href="living.html"
+          alt="Living Area"
+        />
+        <area
+          shape="rect"
+          coords="170,0,260,130"
+          href="master.html"
+          alt="Master Bedroom"
+        />
+      </map>
+    </section>
+    <footer>
+      <p>&copy; 2025 Real Living Real Estate. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

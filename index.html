@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Living | Homepage</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        background: #f9f9f9 url("images/papyrus.webp") repeat;
+        background-size: auto;
+        background-blend-mode: multiply;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #005f73;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .content {
+        flex: 1;
+        margin-right: 20px;
+      }
+      .content h2 {
+        font-size: 2rem;
+        color: #005f73;
+      }
+      .content p,
+      li {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        text-indent: 20px;
+      }
+      nav {
+        background-color: #005f73;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+      }
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px 0;
+      }
+      .gallery-grid img {
+        width: 100%;
+        height: 300px; /* Adjust as needed to maintain uniformity */
+        object-fit: cover; /* Ensures images fill the box while maintaining aspect ratio */
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        margin-top: auto;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Real Living</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floorplan.html">Floor Plan</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section>
+      <!-- About Us Section -->
+      <div class="content">
+        <h2>About Us</h2>
+        <p>
+          Real Living Real Estate is a full-service real estate brokerage
+          franchise company with a comprehensive and integrated suite of
+          resources for franchisees and their sales professionals, as well as
+          for consumers who work with them. In 2016 and 2017, Real Living Real
+          Estate was named
+          <i>"Real Estate Agency Brand of the Year"</i> in the ongoing Harris
+          Poll EquiTrend study; and was named <i>"Most Loved"</i> and
+          <i>"Most Trusted"</i> real estate brand in the study in consecutive
+          years. Additionally, the Real Living Brand and its innovative concepts
+          were recognized by <i>Entrepreneur</i> magazine as well as
+          <i>Inman News</i>, receiving several <b>Inman Innovator Awards</b>.
+          Real Living was also named
+          <i>"the Most Promising New National Brand"</i> by the Swanepoel TRENDS
+          Report. Real Living Real Estate is a network brand of HSF Affiliates
+          LLC, which is owned by HomeServices of America, Inc., a Berkshire
+          Hathaway affiliate.
+        </p>
+        <p>
+          Real Living leads the real estate industry with a customer
+          satisfaction rating of <b>98 percent</b>, based upon research
+          conducted by a third party, independent research firm*
+        </p>
+        <p>
+          Based in <i>Minneapolis, Minn.</i>, HomeServices of America, Inc. is
+          the
+          <u
+            >second-largest, full-service residential real estate brokerage
+            firm</u
+          >
+          and the largest brokerage-owned settlement services provider in the
+          U.S. and is the majority owner in the Prudential Real Estate and Real
+          Living Real Estate franchise networks. Owned by MidAmerican Energy
+          Holdings Company, a consolidated subsidiary of Berkshire Hathaway
+          Inc., HomeServices' operating companies offer integrated real estate
+          services, including brokerage services, mortgage originations, title
+          and closing services, property and casualty insurance, home warranties
+          and other homeownership services
+        </p>
+
+        <!-- Our Achievements Section -->
+        <h2>Our Achievements</h2>
+        <ul>
+          <li>
+            Voted <q><strong>Real Estate Agency Brand of the Year</strong></q>
+          </li>
+          <li>98% customer satisfaction rating</li>
+          <li>Owned by HomeServices of America</li>
+        </ul>
+
+        <!-- Our Services Section -->
+        <h2>Our Services</h2>
+        <p>
+          At Real Living Real Estate, we offer comprehensive services to make
+          your home-buying journey seamless. From personalized home tours to
+          expert mortgage assistance, we guide you every step of the way. Our
+          team also provides interior design consultations to help you envision
+          your dream space, along with renovation and remodeling services to
+          turn any house into your perfect home. Whether you're a first-time
+          buyer or looking for a luxurious upgrade, we are here to assist you
+          with top-tier service and expertise.
+        </p>
+
+        <!-- Gallery Section -->
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="Images/home1.jpg" alt="Relaxing-interior" />
+          <img src="Images/home2.jpg" alt="Calming-living-room" />
+          <img src="Images/home3.jpg" alt="Productive-home" />
+          <img src="Images/home4.jpg" alt="Modern-interior-design" />
+          <img src="Images/home5.jpg" alt="Soothing-room" />
+          <img src="Images/home6.jpg" alt="Modern-room-design" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Real Living Real Estate. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
